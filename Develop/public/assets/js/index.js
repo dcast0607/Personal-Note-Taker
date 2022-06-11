@@ -185,3 +185,5 @@ getAndRenderNotes();
 
 // TODO: When clicking on the "Get Started" button, take the user to the /notes.html page.
 // DONE 
+// TODO: Fix Notes Page so that it renders correctly with the right elements. 
+// DONE, there was an issue with the assets folders not linking correctly.
