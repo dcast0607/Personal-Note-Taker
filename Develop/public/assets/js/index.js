@@ -181,3 +181,7 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+
+// TODO: When clicking on the "Get Started" button, take the user to the /notes.html page.
+// DONE 
