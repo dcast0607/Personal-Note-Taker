@@ -187,3 +187,7 @@ getAndRenderNotes();
 // DONE 
 // TODO: Fix Notes Page so that it renders correctly with the right elements. 
 // DONE, there was an issue with the assets folders not linking correctly.
+// TODO: Retrieve existing notes and display them on the left-hand side of the page. 
+    // TODO: Build server.js file/code
+    // TODO: Figure out the routes needed on our app
+    // TODO: 
