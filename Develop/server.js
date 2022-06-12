@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 app.get('/api/notes', (req, res) => {
     res.status(200).json(noteData);
+    return noteData;
 });
 
 app.post('/api/notes', (req, res) => {

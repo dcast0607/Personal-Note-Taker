@@ -3,6 +3,7 @@ let noteText;
 let saveNoteBtn;
 let newNoteBtn;
 let noteList;
+const baseURL = 'http://localhost:3001';
 
 if (window.location.pathname === '/notes') {
   noteTitle = document.querySelector('.note-title');
@@ -26,12 +27,17 @@ const hide = (elem) => {
 let activeNote = {};
 
 const getNotes = () =>
-  fetch('/api/notes', {
+  fetch(baseURL + '/api/notes', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
+  }).then(response => console.log(response.json()))
+  .then(data => {return data})
+  .catch((error) => {
+    console.error('Error:', error);
   });
+
 
 const saveNote = (note) =>
   fetch('/api/notes', {
@@ -188,6 +194,6 @@ getAndRenderNotes();
 // TODO: Fix Notes Page so that it renders correctly with the right elements. 
 // DONE, there was an issue with the assets folders not linking correctly.
 // TODO: Retrieve existing notes and display them on the left-hand side of the page. 
-    // TODO: Build server.js file/code
-    // TODO: Figure out the routes needed on our app
-    // TODO: 
+    // TODO: Build server.js file/code [DONE]
+    // TODO: Figure out the routes needed on our app [DONE]
+    // TODO: Figure out how to incorporate API code into index.js 
